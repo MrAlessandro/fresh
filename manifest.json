@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Fresh",
+  "version": "1.0",
+  "description": "A fresh new tab page",
+  "chrome_url_overrides": {
+    "newtab": "fresh.html"
+  },
+  "permissions": []
+}
