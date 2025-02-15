@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Fresh",
+  "version": "1.0",
+  "{{chrome}}.manifest_version": 3,
+  "{{firefox}}.manifest_version": 2,
+  "icons": {
+    "16": "icon/16.png",
+    "32": "icon/32.png",
+    "48": "icon/48.png",
+    "96": "icon/96.png",
+    "128": "icon/128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "src/new-tab/index.html"
+  },
+  "options_page": "src/options/index.html",
+  "background": {
+    "{{chrome}}.service_worker": "src/background.ts",
+    "{{firefox}}.scripts": ["src/background.ts"],
+    "type": "module"
+  }
+}
